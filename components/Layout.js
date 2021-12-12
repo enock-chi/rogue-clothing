@@ -7,7 +7,7 @@ import {
   Link,
   Toolbar,
   Typography,
-  createMuiTheme,
+  createTheme,
   ThemeProvider,
   CssBaseline,
   Switch,
@@ -26,7 +26,7 @@ const Layout = ({ title, description, children }) => {
   const { darkMode, cart, userInfo } = state;
   const [anchorEl, setAnchorEl] = useState(null);
   const router = useRouter();
-  const theme = createMuiTheme({
+  const theme = createTheme({
     typography: {
       h1: {
         fontSize: '1.6rem',

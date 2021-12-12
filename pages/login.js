@@ -52,6 +52,10 @@ export default function Login() {
       );
     }
   };
+
+  const onBackClick = () => {
+    router.push('/');
+  };
   return (
     <Layout title="Login">
       <form onSubmit={handleSubmit(submitHandler)} className={classes.form}>
@@ -120,6 +124,16 @@ export default function Login() {
           <ListItem>
             <Button variant="contained" type="submit" fullWidth color="primary">
               Login
+            </Button>
+          </ListItem>
+          <ListItem>
+            <Button
+              variant="outlined"
+              color="primary"
+              fullWidth
+              onClick={() => onBackClick()}
+            >
+              Back
             </Button>
           </ListItem>
           <ListItem>

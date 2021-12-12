@@ -34,6 +34,12 @@ const useStyles = makeStyles({
     color: '#ffffff',
     textTransform: 'initial',
   },
+  stepper: {
+    backgroundColor: 'transparent',
+  },
+  error: {
+    color: '#F04040',
+  },
 });
 
 export default useStyles;

@@ -26,7 +26,7 @@ import router, { useRouter } from 'next/router';
 
 function CartScreen() {
   const router = useRouter();
-  const { state, dispatch } = useContext(Store);
+  const { state, dispatch, userInfo } = useContext(Store);
   const {
     cart: { cartItems },
   } = state;
