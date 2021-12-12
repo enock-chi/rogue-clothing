@@ -13,7 +13,7 @@ import {
   ListItemText,
   TextField,
 } from '@material-ui/core';
-import { getError } from '../utils/error';
+import getError from '../utils/geterror';
 import { Store } from '../utils/Store';
 import Layout from '../components/Layout';
 import useStyles from '../utils/styles';

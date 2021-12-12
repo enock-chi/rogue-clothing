@@ -16,7 +16,7 @@ import useStyles from '../utils/styles';
 import Cookies from 'js-cookie';
 import { Controller, useForm } from 'react-hook-form';
 import { useSnackbar } from 'notistack';
-import { getError } from '../utils/error';
+import getError from '../utils/geterror';
 
 export default function Login() {
   const {
